@@ -1,0 +1,760 @@
+<!doctype html>
+<html>
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Amelda Store</title>
+     <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+     <link href="/css/style.css" rel="stylesheet">
+     <link href="/css/custom.css" rel="stylesheet">
+</head>
+
+<body class="dark:bg-dark bg-slate-300">
+
+     <!-- ========== HEADER ========== -->
+     <header class="flex flex-wrap md:justify-start md:flex-nowrap z-50 text-sm fixed top-0 w-screen">
+          <nav class="mt-3 relative w-11/12 border rounded-[36px] mx-auto py-3 px-4 md:flex md:items-center md:justify-between md:py-0 md:px-6 lg:px-8 xl:mx-auto border-gray-700 shadow-lg dark:shadow-primary dark:border-2 dark:border-white dark:bg-[#171344] bg-dark border-primary"
+               aria-label="Global">
+               <div class="flex items-center justify-between">
+                    <a class="flex-none text-xl" href="/" aria-label="Brand">
+                         <img src="/img/nav-logo.png" width="70%" alt="" srcset="">
+                    </a>
+                    <div class="md:hidden">
+                         <button type="button"
+                              class="hs-collapse-toggle w-8 h-8 flex justify-center items-center text-sm font-semibold rounded-full border disabled:opacity-50 disabled:pointer-events-none text-white border-gray-700 bg-gray-700 focus:outline-none focus:ring-1 focus:ring-gray-600"
+                              data-hs-collapse="#navbar-collapse-with-animation"
+                              aria-controls="navbar-collapse-with-animation" aria-label="Toggle navigation">
+                              <svg class="hs-collapse-open:hidden flex-shrink-0 w-4 h-4"
+                                   xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                   fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                   stroke-linejoin="round">
+                                   <line x1="3" x2="21" y1="6" y2="6" />
+                                   <line x1="3" x2="21" y1="12" y2="12" />
+                                   <line x1="3" x2="21" y1="18" y2="18" /></svg>
+                              <svg class="hs-collapse-open:block hidden flex-shrink-0 w-4 h-4"
+                                   xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                   fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                   stroke-linejoin="round">
+                                   <path d="M18 6 6 18" />
+                                   <path d="m6 6 12 12" /></svg>
+                         </button>
+                    </div>
+               </div>
+               <div id="navbar-collapse-with-animation"
+                    class="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow md:block">
+                    <div
+                         class="flex flex-col gap-y-4 gap-x-0 py-3 lg:py-0 mt-5 md:flex-row md:items-center md:justify-end md:gap-y-0 md:gap-x-7 md:mt-0 md:ps-7 text-white dark:text-white">
+                         <a class="font-medium md:py-6 " href="/" aria-current="page">Home</a>
+                         <a class="font-medium md:py-6 dark:hover:text-primary-secondary"
+                              href="/daftar-game.html">Daftar Game</a>
+                         <a class="font-medium md:py-6 dark:hover:text-primary-secondary"
+                              href="/kontak.html">Kontak</a>
+                         <a class="font-medium md:py-6 dark:hover:text-primary-secondary"
+                              href="/cek-pesanan.html">Cek Pesanan</a>
+
+                         <button type="button"
+                              class="hs-dark-mode-active:hidden block hs-dark-mode group flex items-center text-gray-600 hover:text-blue-600 font-medium dark:text-gray-400 dark:hover:text-gray-500"
+                              data-hs-theme-click-value="dark">
+                              <svg class="flex-shrink-0 w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24"
+                                   height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                   stroke-linecap="round" stroke-linejoin="round">
+                                   <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" /></svg>
+                         </button>
+                         <button type="button"
+                              class="hs-dark-mode-active:block hidden hs-dark-mode group flex items-center  hover:text-blue-600 font-medium dark:text-white dark:hover:text-primary-secondary"
+                              data-hs-theme-click-value="light">
+                              <svg class="flex-shrink-0 w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24"
+                                   height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                   stroke-linecap="round" stroke-linejoin="round">
+                                   <circle cx="12" cy="12" r="4" />
+                                   <path d="M12 8a2 2 0 1 0 4 4" />
+                                   <path d="M12 2v2" />
+                                   <path d="M12 20v2" />
+                                   <path d="m4.93 4.93 1.41 1.41" />
+                                   <path d="m17.66 17.66 1.41 1.41" />
+                                   <path d="M2 12h2" />
+                                   <path d="M20 12h2" />
+                                   <path d="m6.34 17.66-1.41 1.41" />
+                                   <path d="m19.07 4.93-1.41 1.41" /></svg>
+                         </button>
+
+                         <a class="flex items-center gap-x-2 font-medium dark:text-white dark:hover:text-primary-secondary hover:text-gray-400 md:border-s md:border-gray-300 md:my-6 md:ps-6 "
+                              href="/daftar.html">
+                              <svg class="flex-shrink-0 w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24"
+                                   height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                   stroke-linecap="round" stroke-linejoin="round">
+                                   <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
+                                   <circle cx="12" cy="7" r="4" /></svg>
+                              Login/Daftar
+                         </a>
+                    </div>
+               </div>
+          </nav>
+     </header>
+     <!-- ========== END HEADER ========== -->
+
+
+     <!-- Carosel Start -->
+     <!-- Slider -->
+     <div class="container mt-28 lg:mt-0">
+          <div data-hs-carousel='{
+               "loadingClasses": "opacity-0"
+             }' class="relative">
+               <div class="hs-carousel relative overflow-hidden w-screen max-h-[550px] bg-white">
+                    <div class="hs-carousel-body opacity-0">
+                         <div class="hs-carousel-slide">
+                              <div class="flex justify-center h-full">
+                                   <span class="self-center">
+                                        <img src="/img/bannerfreefire.jpg" class="w-screen" alt="" srcset="">
+                                   </span>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </div>
+     <!-- End Slider -->
+     <!-- Carosel End -->
+
+
+     <!-- Main Content -->
+     <div class="container lg:w-10/12 lg:mx-auto mt-7">
+          <div class="grid grid-cols-12 mx-2 lg:mx-auto justify-between gap-4">
+               <div
+                    class="col-span-12 lg:col-span-4 border-2 rounded-lg sm:sticky sm:top-24 max-h-[530px] shadow-lg bg-[#171344]">
+                    <ul class="flex flex-col pb-3 text-white">
+                         <li class="inline-flex items-center gap-x-5 py-3 px-4 text-sm font-medium rounded-lg">
+                              <img src="/img/freefire-game-detail.jpg" class="rounded-lg" width="35%" alt=""
+                                   srcset="">
+                              <span class="flex flex-col">
+                                   <h1 class="font-normal">Garena</h1>
+                                   <h1 class="text-3xl">Free Fire</h1>
+                                   <h1 class="font-normal">Diproses Otomatis</h1>
+                                   <p>Buka 24 Jam</p>
+                              </span>
+                         </li>
+                         <li class="flex flex-col gap-x-2 py-3 px-4 text-sm font-medium ">
+                              <p class="font-normal text-[15px]">
+                                   Top up FF diamond Free Fire harga paling murah, aman, cepat, dan terpercaya hanya di
+                                   Toko Nexus. Cara topup FF via ID termurah cukup dengan memasukkan ID dan lakukan
+                                   pembayaran, secara otomatis diamond masuk ke akun Anda.
+                              </p>
+                              <ul class="list-disc list-outside marker:text-green font-normal ml-5 text-[15px] mt-4">
+                                   <li>Waktu proses 1-5 menit (setelah pembayaran diterima)</li>
+                                   <li>Layanan top up open 24 Jam Non Stop</li>
+                                   <li>Bantuan chat WhatsApp open 24 jam</li>
+                              </ul>
+                         </li>
+                         <li class="flex flex-col items-center justify-center gap-x-2 py-3 px-4 text-sm font-medium">
+                              <h1 class="text-lg mb-3">Perlu Bantuan?</h1>
+                              <button type="button"
+                                   class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-yellow-500 text-yellow-500 hover:border-yellow-400 hover:bg-yellow-400 hover:text-dark disabled:opacity-50 disabled:pointer-events-none">
+                                   Hubungi Kami
+                              </button>
+                         </li>
+                    </ul>
+               </div>
+
+               <div class="col-span-12 lg:col-span-8">
+                    <!-- Tahap 1 Masukan Data -->
+                    <div class="rounded-lg shadow-xl border-2 bg-[#171344]">
+                         <div
+                              class="relative h-11 rounded bg-[url('/img/frame-game.svg')] bg-no-repeat bg-cover bg-center" style="background-image: url('/img/frame-game.svg');">
+                              <h1
+                                   class="flex items-center justify-center text-2xl text-white font-bold bg-dark rounded-tl-lg w-10 h-full absolute top-15 rounded-s-sm">
+                                   1</h1>
+                              <h1 class="flex items-center justify-center h-full text-white text-lg font-bold">Masukan
+                                   Data</h1>
+                         </div>
+
+                         <div class="grid grid-cols-2 gap-4 mt-8 p-5 text-white">
+                              <div>
+                                   <div class="relative">
+                                        <h1 class="font-bold my-2 absolute -top-10">ID</h1>
+                                        <input type="email"
+                                             class="peer py-3 px-4 ps-11 block w-full rounded-lg text-sm disabled:opacity-50 disabled:pointer-events-none bg-white border-2 border-primary text-black focus:outline-none"
+                                             placeholder="Masukan ID">
+                                        <div
+                                             class="absolute inset-y-0 start-0 flex items-center pointer-events-none ps-4 peer-disabled:opacity-50 peer-disabled:pointer-events-none">
+                                             <i
+                                                  class="fa-solid fa-id-badge flex-shrink-0 text-lg w-4 h-4 text-gray-500"></i>
+                                        </div>
+                                   </div>
+                              </div>
+
+                              <div class=" col-span-2">
+                                   <button type="button"
+                                        class="hs-collapse-toggle py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+                                        id="hs-basic-collapse" data-hs-collapse="#hs-basic-collapse-heading">
+                                        Petunjuk?
+                                        <svg class="hs-collapse-open:rotate-180 flex-shrink-0 w-4 h-4 text-white"
+                                             xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                             stroke-linecap="round" stroke-linejoin="round">
+                                             <path d="m6 9 6 6 6-6" /></svg>
+                                   </button>
+                                   <div id="hs-basic-collapse-heading"
+                                        class="hs-collapse hidden w-full overflow-hidden transition-[height] duration-300"
+                                        aria-labelledby="hs-basic-collapse">
+                                        <div class="mt-4">
+                                             <div
+                                                  class="py-3 flex items-center text-lg font-bold text-white before:flex-[1_1_0%] before:border-t before:border-white before:me-6 after:flex-[1_1_0%] after:border-t after:border-white after:ms-6 ">
+                                                  Contoh</div>
+                                             <img src="/img/idfreefire.jpg" alt="" srcset="">
+                                        </div>
+                                   </div>
+                              </div>
+
+                         </div>
+                    </div>
+
+                    <div class="my-5"></div>
+
+                    <!-- Tahap 2 Pilih Nominal -->
+                    <div class="rounded-lg shadow-xl border-2 bg-[#171344]">
+                         <div
+                              class="relative h-11 rounded bg-[url('/img/frame-game.svg')] bg-no-repeat bg-cover bg-center" style="background-image: url('/img/frame-game.svg');">
+                              <h1
+                                   class="flex items-center justify-center text-2xl text-white font-bold bg-dark rounded-tl-lg w-10 h-full absolute top-15 rounded-s-sm">
+                                   2</h1>
+                              <h1 class="flex items-center justify-center h-full text-white text-lg font-bold">Pilih
+                                   Nominal</h1>
+                         </div>
+
+                         <div class="p-5 mx-auto">
+                              <div
+                                   class="grid grid-cols-2 lg:grid-cols-3 justify-center align-middle items-center gap-3">
+                                   <div class="col-span-full">
+                                        <div class="flex items-center justify-between pb-4 border-b border-gray-300">
+                                             <legend class="text-2xl text-white mr-4">Rekomendasi</legend>
+                                        </div>
+                                   </div>
+
+                                   <label class="cursor-pointer">
+                                        <input type="radio" class="peer sr-only" name="pricing" />
+                                        <div
+                                             class="rounded-md bg-dark px-5 py-2 text-white ring-2 ring-transparent transition-all shadow peer-checked:text-primary peer-checked:ring-lime-500 peer-checked:ring-offset-0 peer-checked:border-none active:scale-95 ease-in-out">
+                                             <div class="flex flex-col gap-1">
+                                                  <div class="grid grid-cols-1 lg:grid-cols-2">
+                                                       <div>
+                                                            <div class="flex items-center align-middle lg:hidden">
+                                                                 <img src="/img/diamondfreefire.png" alt=""
+                                                                      width="15%" srcset="">
+                                                                 <p
+                                                                      class="text-sm font-semibold ml-1 uppercase text-slate-300">
+                                                                      Diamonds</p>
+                                                            </div>
+                                                            <p
+                                                                 class="text-sm font-semibold uppercase text-slate-300 hidden lg:block">
+                                                                 Diamonds</p>
+                                                            <p><span class="text-sm font-bold">140</p>
+                                                            <p class="text-sm font-medium">Rp. 20,000</p>
+                                                       </div>
+                                                       <div
+                                                            class="justify-end items-center align-middle hidden lg:flex">
+                                                            <img src="/img/diamondfreefire.png" alt="" srcset="">
+                                                       </div>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                   </label>
+
+                                   <label class="cursor-pointer">
+                                        <input type="radio" class="peer sr-only" name="pricing" />
+                                        <div
+                                             class="rounded-md bg-dark px-5 py-2 text-white ring-2 ring-transparent transition-all shadow peer-checked:text-primary peer-checked:ring-lime-500 peer-checked:ring-offset-0 peer-checked:border-none active:scale-95 ease-in-out">
+                                             <div class="flex flex-col gap-1">
+                                                  <div class="grid grid-cols-1 lg:grid-cols-2">
+                                                       <div>
+                                                            <div class="flex items-center align-middle lg:hidden">
+                                                                 <img src="/img/diamondfreefire.png" alt=""
+                                                                      width="15%" srcset="">
+                                                                 <p
+                                                                      class="text-sm font-semibold ml-1 uppercase text-slate-300">
+                                                                      Diamonds</p>
+                                                            </div>
+                                                            <p
+                                                                 class="text-sm font-semibold uppercase text-slate-300 hidden lg:block">
+                                                                 Diamonds</p>
+                                                            <p><span class="text-sm font-bold">140</p>
+                                                            <p class="text-sm font-medium">Rp. 20,000</p>
+                                                       </div>
+                                                       <div
+                                                            class="justify-end items-center align-middle hidden lg:flex">
+                                                            <img src="/img/diamondfreefire.png" alt="" srcset="">
+                                                       </div>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                   </label>
+
+                                   <label class="cursor-pointer">
+                                        <input type="radio" class="peer sr-only" name="pricing" />
+                                        <div
+                                             class="rounded-md bg-dark px-5 py-2 text-white ring-2 ring-transparent transition-all shadow peer-checked:text-primary peer-checked:ring-lime-500 peer-checked:ring-offset-0 peer-checked:border-none active:scale-95 ease-in-out">
+                                             <div class="flex flex-col gap-1">
+                                                  <div class="grid grid-cols-1 lg:grid-cols-2">
+                                                       <div>
+                                                            <div class="flex items-center align-middle lg:hidden">
+                                                                 <img src="/img/diamondfreefire.png" alt=""
+                                                                      width="15%" srcset="">
+                                                                 <p
+                                                                      class="text-sm font-semibold ml-1 uppercase text-slate-300">
+                                                                      Diamonds</p>
+                                                            </div>
+                                                            <p
+                                                                 class="text-sm font-semibold uppercase text-slate-300 hidden lg:block">
+                                                                 Diamonds</p>
+                                                            <p><span class="text-sm font-bold">140</p>
+                                                            <p class="text-sm font-medium">Rp. 20,000</p>
+                                                       </div>
+                                                       <div
+                                                            class="justify-end items-center align-middle hidden lg:flex">
+                                                            <img src="/img/diamondfreefire.png" alt="" srcset="">
+                                                       </div>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                   </label>
+
+                                   <label class="cursor-pointer">
+                                        <input type="radio" class="peer sr-only" name="pricing" />
+                                        <div
+                                             class="rounded-md bg-dark px-5 py-2 text-white ring-2 ring-transparent transition-all shadow peer-checked:text-primary peer-checked:ring-lime-500 peer-checked:ring-offset-0 peer-checked:border-none active:scale-95 ease-in-out">
+                                             <div class="flex flex-col gap-1">
+                                                  <div class="grid grid-cols-1 lg:grid-cols-2">
+                                                       <div>
+                                                            <div class="flex items-center align-middle lg:hidden">
+                                                                 <img src="/img/diamondfreefire.png" alt=""
+                                                                      width="15%" srcset="">
+                                                                 <p
+                                                                      class="text-sm font-semibold ml-1 uppercase text-slate-300">
+                                                                      Diamonds</p>
+                                                            </div>
+                                                            <p
+                                                                 class="text-sm font-semibold uppercase text-slate-300 hidden lg:block">
+                                                                 Diamonds</p>
+                                                            <p><span class="text-sm font-bold">140</p>
+                                                            <p class="text-sm font-medium">Rp. 20,000</p>
+                                                       </div>
+                                                       <div
+                                                            class="justify-end items-center align-middle hidden lg:flex">
+                                                            <img src="/img/diamondfreefire.png" alt="" srcset="">
+                                                       </div>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                   </label>
+
+                                   <label class="cursor-pointer">
+                                        <input type="radio" class="peer sr-only" name="pricing" />
+                                        <div
+                                             class="rounded-md bg-dark px-5 py-2 text-white ring-2 ring-transparent transition-all shadow peer-checked:text-primary peer-checked:ring-lime-500 peer-checked:ring-offset-0 peer-checked:border-none active:scale-95 ease-in-out">
+                                             <div class="flex flex-col gap-1">
+                                                  <div class="grid grid-cols-1 lg:grid-cols-2">
+                                                       <div>
+                                                            <div class="flex items-center align-middle lg:hidden">
+                                                                 <img src="/img/diamondfreefire.png" alt=""
+                                                                      width="15%" srcset="">
+                                                                 <p
+                                                                      class="text-sm font-semibold ml-1 uppercase text-slate-300">
+                                                                      Diamonds</p>
+                                                            </div>
+                                                            <p
+                                                                 class="text-sm font-semibold uppercase text-slate-300 hidden lg:block">
+                                                                 Diamonds</p>
+                                                            <p><span class="text-sm font-bold">140</p>
+                                                            <p class="text-sm font-medium">Rp. 20,000</p>
+                                                       </div>
+                                                       <div
+                                                            class="justify-end items-center align-middle hidden lg:flex">
+                                                            <img src="/img/diamondfreefire.png" alt="" srcset="">
+                                                       </div>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                   </label>
+
+                                   <label class="cursor-pointer">
+                                        <input type="radio" class="peer sr-only" name="pricing" />
+                                        <div
+                                             class="rounded-md bg-dark px-5 py-2 text-white ring-2 ring-transparent transition-all shadow peer-checked:text-primary peer-checked:ring-lime-500 peer-checked:ring-offset-0 peer-checked:border-none active:scale-95 ease-in-out">
+                                             <div class="flex flex-col gap-1">
+                                                  <div class="grid grid-cols-1 lg:grid-cols-2">
+                                                       <div>
+                                                            <div class="flex items-center align-middle lg:hidden">
+                                                                 <img src="/img/diamondfreefire.png" alt=""
+                                                                      width="15%" srcset="">
+                                                                 <p
+                                                                      class="text-sm font-semibold ml-1 uppercase text-slate-300">
+                                                                      Diamonds</p>
+                                                            </div>
+                                                            <p
+                                                                 class="text-sm font-semibold uppercase text-slate-300 hidden lg:block">
+                                                                 Diamonds</p>
+                                                            <p><span class="text-sm font-bold">140</p>
+                                                            <p class="text-sm font-medium">Rp. 20,000</p>
+                                                       </div>
+                                                       <div
+                                                            class="justify-end items-center align-middle hidden lg:flex">
+                                                            <img src="/img/diamondfreefire.png" alt="" srcset="">
+                                                       </div>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                   </label>
+
+                                   <div class="col-span-full bg-slate-900 rounded-lg p-3 mt-2 text-white">
+                                        <h1 class="font-semibold text-sm">"JUMLAH ITEM DIBAWAH DI ISI SESUAI BERAPA KALI PEMBELIAN BUKAN NOMINAL DIAMOND"
+                                        </h1>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+
+                    <div class="my-5"></div>
+
+                    <!-- Tahap 3 Masukan Jumlah Items -->
+                    <div class="rounded-lg shadow-xl border-2 bg-[#171344]">
+                         <div
+                              class="relative h-11 rounded bg-[url('/img/frame-game.svg')] bg-no-repeat bg-cover bg-center" style="background-image: url('/img/frame-game.svg');">
+                              <h1
+                                   class="flex items-center justify-center text-2xl text-white font-bold bg-dark rounded-tl-lg w-10 h-full absolute top-15 rounded-s-sm">
+                                   3</h1>
+                              <h1 class="flex items-center justify-center h-full text-white text-lg font-bold">Jumlah
+                                   Item</h1>
+                         </div>
+
+                         <div class="grid grid-cols-1 gap-4 mt-8 p-5">
+                              <div>
+                                   <div class="relative text-white">
+                                        <h1 class="font-bold my-2 absolute -top-10">Jumlah Item Dibeli</h1>
+                                        <input type="number"
+                                             class="peer py-3 px-4 ps-11 block w-full rounded-lg text-sm disabled:opacity-50 disabled:pointer-events-none bg-white border-2 border-primary text-black focus:outline-none"
+                                             placeholder="0">
+                                        <div
+                                             class="absolute inset-y-0 start-0 flex items-center pointer-events-none ps-4 peer-disabled:opacity-50 peer-disabled:pointer-events-none">
+                                             <i
+                                                  class="fa-solid fa-cash-register flex-shrink-0 text-lg w-4 h-4 text-gray-500"></i>
+                                        </div>
+                                   </div>
+                              </div>
+
+                         </div>
+                    </div>
+
+                    <div class="my-5"></div>
+
+                    <!-- Tahap 4 Pilih Metode Pembayaran -->
+                    <div class="rounded-lg shadow-xl border-2 bg-[#171344]">
+                         <div
+                              class="relative h-11 rounded bg-[url('/img/frame-game.svg')] bg-no-repeat bg-cover bg-center" style="background-image: url('/img/frame-game.svg');">
+                              <h1
+                                   class="flex items-center justify-center text-2xl text-white font-bold bg-dark rounded-tl-lg w-10 h-full absolute top-15 rounded-s-sm">
+                                   4</h1>
+                              <h1 class="flex items-center justify-center h-full text-white text-lg font-bold">Metode
+                                   Pembayaran</h1>
+                         </div>
+
+                         <div class="grid grid-cols-1 gap-2 mt-1 p-5">
+                              <div>
+                                   <button type="button"
+                                        class="hs-collapse-toggle py-3 px-4 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg w-full shadow-sm  disabled:opacity-50 disabled:pointer-events-none bg-yellow-500 text-white hover:bg-yellow-600"
+                                        id="hs-unstyled-collapse"
+                                        data-hs-collapse="#hs-unstyled-collapse-heading-ewallet">
+                                        <div class="flex justify-between w-full relative">
+                                             <span>E-Wallet</span>
+                                             <img src="/img/gopay.png"
+                                                  class="absolute right-32 top-1 object-fit h-3" alt="" srcset="">
+                                             <img src="/img/qris.png"
+                                                  class="absolute right-10 top-1 object-fit h-3" alt="" srcset="">
+                                             <svg class="hs-collapse-open:rotate-180 w-4 h-4"
+                                                  xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                  viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                  stroke-linecap="round" stroke-linejoin="round">
+                                                  <path d="m6 9 6 6 6-6" /></svg>
+                                        </div>
+                                   </button>
+                                   <div id="hs-unstyled-collapse-heading-ewallet"
+                                        class="hs-collapse hidden w-full -mt-1 overflow-hidden transition-[height] duration-300 p-5 bg-yellow-500 text-white rounded-b-lg"
+                                        aria-labelledby="hs-unstyled-collapse">
+
+                                        <div
+                                             class="grid grid-cols-1 lg:grid-cols-3 justify-center align-middle items-center gap-3">
+
+                                             <label class="cursor-pointer">
+                                                  <input type="radio" class="peer sr-only" name="payment" />
+                                                  <div
+                                                       class="rounded-md bg-white px-5 py-2 text-gray-600 ring-2 ring-transparent transition-all shadow peer-checked:text-blue-600 peer-checked:ring-blue-400 peer-checked:shadow-lg peer-checked:shadow-blue-700  peer-checked:ring-offset-2 active:scale-95 ease-in-out">
+                                                       <div class="flex flex-col gap-1">
+                                                            <div class="grid grid-cols-2">
+                                                                 <div>
+                                                                      <p><span class="text-sm font-bold">Gopay
+                                                                      </p>
+                                                                      <p class="text-sm font-medium">Rp. 31,000</p>
+                                                                 </div>
+                                                                 <div
+                                                                      class="justify-end items-center align-middle flex">
+                                                                      <img src="/img/gopay.png" alt="" srcset="">
+                                                                 </div>
+                                                            </div>
+                                                       </div>
+                                                  </div>
+                                             </label>
+
+                                             <label class="cursor-pointer">
+                                                  <input type="radio" class="peer sr-only" name="payment" />
+                                                  <div
+                                                       class="rounded-md bg-white px-5 py-2 text-gray-600 ring-2 ring-transparent transition-all shadow peer-checked:text-blue-600 peer-checked:ring-blue-400 peer-checked:shadow-lg peer-checked:shadow-blue-700 peer-checked:ring-offset-2 active:scale-95 ease-in-out">
+                                                       <div class="flex flex-col gap-1">
+                                                            <div class="grid grid-cols-2">
+                                                                 <div>
+                                                                      <p><span class="text-sm font-bold">QRIS
+                                                                      </p>
+                                                                      <p class="text-sm font-medium">Rp. 31,000</p>
+                                                                 </div>
+                                                                 <div
+                                                                      class="justify-end items-center align-middle flex">
+                                                                      <img src="/img/qris.png" alt="" srcset="">
+                                                                 </div>
+                                                            </div>
+                                                       </div>
+                                                  </div>
+                                             </label>
+                                        </div>
+
+                                   </div>
+                              </div>
+
+                              <div>
+                                   <button type="button"
+                                        class="hs-collapse-toggle py-3 px-4 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg w-full shadow-sm  disabled:opacity-50 disabled:pointer-events-none bg-yellow-500 text-white hover:bg-yellow-600"
+                                        id="hs-unstyled-collapse"
+                                        data-hs-collapse="#hs-unstyled-collapse-heading-transferbank">
+                                        <div class="flex justify-between w-full relative">
+                                             <span>Transfer Bank</span>
+                                             <img src="/img/bca1.jpg"
+                                                  class="absolute right-10 top-1 object-fit h-3" alt="" srcset="">
+                                             <svg class="hs-collapse-open:rotate-180 w-4 h-4"
+                                                  xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                  viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                  stroke-linecap="round" stroke-linejoin="round">
+                                                  <path d="m6 9 6 6 6-6" /></svg>
+                                        </div>
+                                   </button>
+                                   <div id="hs-unstyled-collapse-heading-transferbank"
+                                        class="hs-collapse hidden w-full -mt-1 overflow-hidden transition-[height] duration-300 p-5 bg-yellow-500 text-white rounded-b-lg"
+                                        aria-labelledby="hs-unstyled-collapse">
+
+                                        <div
+                                             class="grid grid-cols-1 lg:grid-cols-3 justify-center align-middle items-center gap-3">
+
+                                             <label class="cursor-pointer">
+                                                  <input type="radio" class="peer sr-only" name="payment" />
+                                                  <div
+                                                       class="rounded-md bg-white px-5 py-2 text-gray-600 ring-2 ring-transparent transition-all shadow peer-checked:text-blue-600 peer-checked:ring-blue-400 peer-checked:shadow-lg peer-checked:shadow-blue-700  peer-checked:ring-offset-2 active:scale-95 ease-in-out">
+                                                       <div class="flex flex-col gap-1">
+                                                            <div class="grid grid-cols-2">
+                                                                 <div>
+                                                                      <p><span class="text-sm font-bold">BCA
+                                                                      </p>
+                                                                      <p class="text-sm font-medium">Rp. 31,000</p>
+                                                                 </div>
+                                                                 <div
+                                                                      class="justify-end items-center align-middle flex">
+                                                                      <img src="/img/bca1.jpg" alt="" srcset="">
+                                                                 </div>
+                                                            </div>
+                                                       </div>
+                                                  </div>
+                                             </label>
+                                        </div>
+
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+
+                    <div class="my-5"></div>
+
+                    <!-- Tahap 5 Masukan Nomor Telepon -->
+                    <div class="rounded-lg shadow-xl border-2 bg-[#171344]">
+                         <div
+                              class="relative h-11 rounded bg-[url('/img/frame-game.svg')] bg-no-repeat bg-cover bg-center" style="background-image: url('/img/frame-game.svg');">
+                              <h1
+                                   class="flex items-center justify-center text-2xl text-white font-bold bg-dark rounded-tl-lg w-10 h-full absolute top-15 rounded-s-sm">
+                                   5</h1>
+                              <h1 class="flex items-center justify-center h-full text-white text-lg font-bold">Masukan
+                                   Nomor WhatsApp</h1>
+                         </div>
+
+                         <div class="grid grid-cols-1 gap-4 mt-8 p-5">
+                              <div>
+                                   <div class="relative text-white">
+                                        <h1 class="font-bold my-2 absolute -top-10">No WA Aktif</h1>
+                                        <input type="number"
+                                             class="peer py-3 px-4 ps-20 block w-full rounded-lg text-sm disabled:opacity-50 disabled:pointer-events-none bg-white border-2 border-primary text-black focus:outline-none"
+                                             placeholder="812-1234-5632">
+                                        <div
+                                             class="absolute inset-y-0 start-0 flex items-center pointer-events-none ps-4 peer-disabled:opacity-50 peer-disabled:pointer-events-none">
+                                             <i
+                                                  class="fa-solid fa-phone flex-shrink-0 text-sm pt-[2px] w-4 h-4 text-gray-500">&nbsp;+62</i>
+                                        </div>
+                                   </div>
+                              </div>
+
+                         </div>
+                    </div>
+
+                    <div class="my-5"></div>
+
+                    <!-- Tombol Pesan Sekarang -->
+                    <div class="rounded-lg hidden lg:block">
+                         <button type="submit"
+                              class="w-full bg-primary h-12 font-bold rounded-lg hover:shadow-lg hover:shadow-lime-400 hover:bg-lime-400 active:scale-95 transition ease-in-out shadow-xl"><i
+                                   class="fa-solid fa-cart-arrow-down"></i> Order Sekarang</button>
+                    </div>
+
+                    <div class="rounded-lg block lg:hidden fixed bottom-3 w-full pr-4 z-50 shadow-lg">
+                         <button type="submit"
+                              class="w-full bg-primary h-12 font-bold rounded-lg hover:shadow-lg hover:shadow-lime-400 hover:bg-lime-400 active:scale-95 transition ease-in-out shadow-xl"><i
+                                   class="fa-solid fa-cart-arrow-down"></i> Order Sekarang</button>
+                    </div>
+
+               </div>
+          </div>
+     </div>
+     <!-- End Main Content -->
+
+     <div class="h-10"></div>
+
+
+     <!-- Footer Start -->
+     <svg id="wave" style="transform:rotate(0deg); transition: 0.3s; margin-bottom: -1px; margin-top:100px;"
+          viewBox="0 0 1440 220" version="1.1" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+               <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
+                    <stop stop-color="rgba(23, 19, 68, 1)" offset="0%"></stop>
+                    <stop stop-color="rgba(23, 19, 68, 1)" offset="100%"></stop>
+               </linearGradient>
+          </defs>
+          <path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)"
+               d="M0,66L15,88C30,110,60,154,90,143C120,132,150,66,180,51.3C210,37,240,73,270,80.7C300,88,330,66,360,47.7C390,29,420,15,450,7.3C480,0,510,0,540,11C570,22,600,44,630,69.7C660,95,690,125,720,117.3C750,110,780,66,810,62.3C840,59,870,95,900,121C930,147,960,161,990,143C1020,125,1050,73,1080,58.7C1110,44,1140,66,1170,62.3C1200,59,1230,29,1260,29.3C1290,29,1320,59,1350,58.7C1380,59,1410,29,1440,40.3C1470,51,1500,103,1530,106.3C1560,110,1590,66,1620,66C1650,66,1680,110,1710,132C1740,154,1770,154,1800,139.3C1830,125,1860,95,1890,69.7C1920,44,1950,22,1980,14.7C2010,7,2040,15,2070,47.7C2100,81,2130,139,2145,168.7L2160,198L2160,220L2145,220C2130,220,2100,220,2070,220C2040,220,2010,220,1980,220C1950,220,1920,220,1890,220C1860,220,1830,220,1800,220C1770,220,1740,220,1710,220C1680,220,1650,220,1620,220C1590,220,1560,220,1530,220C1500,220,1470,220,1440,220C1410,220,1380,220,1350,220C1320,220,1290,220,1260,220C1230,220,1200,220,1170,220C1140,220,1110,220,1080,220C1050,220,1020,220,990,220C960,220,930,220,900,220C870,220,840,220,810,220C780,220,750,220,720,220C690,220,660,220,630,220C600,220,570,220,540,220C510,220,480,220,450,220C420,220,390,220,360,220C330,220,300,220,270,220C240,220,210,220,180,220C150,220,120,220,90,220C60,220,30,220,15,220L0,220Z">
+          </path>
+     </svg>
+     <footer class="bg-[#171344] w-full">
+          <div class="w-full max-w-[85rem] py-10 px-4 sm:px-6 lg:px-8 lg:pt-0 mx-auto">
+               <!-- Grid -->
+               <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-x-10">
+                    <div class="col-span-full lg:col-span-2 text-white">
+                         <a class="flex-none text-xl font-semibold " href="#" aria-label="Brand"><img
+                                   src="/img/nav-logo.png" alt="" srcset=""></a>
+                         <p class="mt-2">Website top up dan voucher game online murah, aman, tepercaya dan
+                              terjangkau. Pembayaran
+                              lengkap, proses instan, legal dan terpercaya. tersedia berbagai macam jenis game populer
+                              seperti Mobile Legends,Pubg Mobile, Free Fire, Valorant, AOV dan masih banyak yang
+                              lainnya.</p>
+                    </div>
+                    <!-- End Col -->
+
+                    <div>
+                         <h4 class="font-semibold text-xl underline text-primary">Site Map</h4>
+
+                         <div class="mt-3 grid space-y-3">
+                              <p><a class="inline-flex gap-x-2 text-white hover:text-gray-200 underline"
+                                        href="#">Home</a></p>
+                              <p><a class="inline-flex gap-x-2 text-white hover:text-gray-200 underline"
+                                        href="#">Login</a></p>
+                              <p><a class="inline-flex gap-x-2 text-white hover:text-gray-200 underline" href="#">Cek
+                                        Transaksi</a></p>
+                         </div>
+                    </div>
+                    <!-- End Col -->
+
+                    <div>
+                         <h4 class="font-semibold text-xl underline text-primary">Follow Us</h4>
+
+                         <div class="mt-3 grid space-y-3">
+                              <p><a class="inline-flex gap-x-2 text-white hover:text-gray-200 underline"
+                                        href="#">Facebook</a></p>
+                              <p><a class="inline-flex gap-x-2 text-white hover:text-gray-200 underline"
+                                        href="#">Instagram</a></p>
+                         </div>
+                    </div>
+                    <!-- End Col -->
+
+                    <div>
+                         <h4 class="font-semibold text-xl underline text-primary">Contact</h4>
+
+                         <div class="mt-3 grid space-y-3">
+                              <p><a class="inline-flex gap-x-2 text-white hover:text-gray-200 underline"
+                                        href="#">WhatsApp</a></p>
+                              <p><a class="inline-flex gap-x-2 text-white hover:text-gray-200 underline" href="#">+62
+                                        813-8604-9701</a></p>
+                         </div>
+                    </div>
+                    <!-- End Col -->
+               </div>
+               <!-- End Grid -->
+
+               <div class="mt-5 sm:mt-12 grid gap-y-2 sm:gap-y-0 sm:flex sm:justify-between sm:items-center">
+                    <div class="flex justify-between items-center">
+                         <p class="text-sm text-gray-400">© 2022 Preline. All rights reserved.</p>
+                    </div>
+                    <!-- End Col -->
+
+                    <!-- Social Brands -->
+                    <div>
+                         <a class="w-10 h-10 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent text-white hover:bg-white/10 disabled:opacity-50 disabled:pointer-events-none focus:outline-none focus:ring-1 focus:ring-gray-600"
+                              href="#">
+                              <svg class="flex-shrink-0 w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="16"
+                                   height="16" fill="currentColor" viewBox="0 0 16 16">
+                                   <path
+                                        d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                              </svg>
+                         </a>
+                         <a class="w-10 h-10 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent text-white hover:bg-white/10 disabled:opacity-50 disabled:pointer-events-none focus:outline-none focus:ring-1 focus:ring-gray-600"
+                              href="#">
+                              <svg class="flex-shrink-0 w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="16"
+                                   height="16" fill="currentColor" viewBox="0 0 16 16">
+                                   <path
+                                        d="M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z" />
+                              </svg>
+                         </a>
+                         <a class="w-10 h-10 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent text-white hover:bg-white/10 disabled:opacity-50 disabled:pointer-events-none focus:outline-none focus:ring-1 focus:ring-gray-600"
+                              href="#">
+                              <svg class="flex-shrink-0 w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="16"
+                                   height="16" fill="currentColor" viewBox="0 0 16 16">
+                                   <path
+                                        d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+                              </svg>
+                         </a>
+                         <a class="w-10 h-10 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent text-white hover:bg-white/10 disabled:opacity-50 disabled:pointer-events-none focus:outline-none focus:ring-1 focus:ring-gray-600"
+                              href="#">
+                              <svg class="flex-shrink-0 w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="16"
+                                   height="16" fill="currentColor" viewBox="0 0 16 16">
+                                   <path
+                                        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                              </svg>
+                         </a>
+                         <a class="w-10 h-10 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent text-white hover:bg-white/10 disabled:opacity-50 disabled:pointer-events-none focus:outline-none focus:ring-1 focus:ring-gray-600"
+                              href="#">
+                              <svg class="flex-shrink-0 w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="16"
+                                   height="16" fill="currentColor" viewBox="0 0 16 16">
+                                   <path
+                                        d="M3.362 10.11c0 .926-.756 1.681-1.681 1.681S0 11.036 0 10.111C0 9.186.756 8.43 1.68 8.43h1.682v1.68zm.846 0c0-.924.756-1.68 1.681-1.68s1.681.756 1.681 1.68v4.21c0 .924-.756 1.68-1.68 1.68a1.685 1.685 0 0 1-1.682-1.68v-4.21zM5.89 3.362c-.926 0-1.682-.756-1.682-1.681S4.964 0 5.89 0s1.68.756 1.68 1.68v1.682H5.89zm0 .846c.924 0 1.68.756 1.68 1.681S6.814 7.57 5.89 7.57H1.68C.757 7.57 0 6.814 0 5.89c0-.926.756-1.682 1.68-1.682h4.21zm6.749 1.682c0-.926.755-1.682 1.68-1.682.925 0 1.681.756 1.681 1.681s-.756 1.681-1.68 1.681h-1.681V5.89zm-.848 0c0 .924-.755 1.68-1.68 1.68A1.685 1.685 0 0 1 8.43 5.89V1.68C8.43.757 9.186 0 10.11 0c.926 0 1.681.756 1.681 1.68v4.21zm-1.681 6.748c.926 0 1.682.756 1.682 1.681S11.036 16 10.11 16s-1.681-.756-1.681-1.68v-1.682h1.68zm0-.847c-.924 0-1.68-.755-1.68-1.68 0-.925.756-1.681 1.68-1.681h4.21c.924 0 1.68.756 1.68 1.68 0 .926-.756 1.681-1.68 1.681h-4.21z" />
+                              </svg>
+                         </a>
+                    </div>
+                    <!-- End Social Brands -->
+               </div>
+          </div>
+     </footer>
+     <!-- Footer End -->
+
+     <script src="/js/preline.js"></script>
+     <script src="https://kit.fontawesome.com/f51741a9dd.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
